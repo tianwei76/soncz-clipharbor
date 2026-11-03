@@ -1,0 +1,13 @@
+# Build and release artifacts
+dist/
+*.zip
+
+# Legacy unused assets kept outside the source package
+icons/cop.png
+icons/refresh.png
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

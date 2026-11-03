@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>抖音视频下载器</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div class="brand">
+          <img src="icons/icon128.png" alt="" class="brandLogo">
+          <div><h1>抖音视频下载器</h1><p>下载当前页面的视频</p></div>
+        </div>
+        <span id="versionBadge" class="badge">v-</span>
+      </header>
+      <section class="panel">
+        <div class="panelTitleRow">
+          <p class="label">检测状态</p>
+          <button id="refreshButton" type="button" class="refreshButton">刷新检测</button>
+        </div>
+        <p id="statusText" class="value" role="status" aria-live="polite">正在读取</p>
+      </section>
+      <section class="panel">
+        <p class="label">视频标题</p>
+        <p id="videoTitle" class="titleText">暂未检测到视频</p>
+        <p id="videoAuthor" class="author" hidden></p>
+      </section>
+      <button id="downloadVideoButton" type="button" class="downloadVideoButton" disabled>下载视频</button>
+      <p class="hint">打开抖音视频详情页并播放，检测到视频后即可下载。</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
